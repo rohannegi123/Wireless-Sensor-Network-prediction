@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request,jsonify
 from flask_cors import CORS,cross_origin
 import pickle
-from PIL import Image
+
 
 
 app = Flask(__name__)
@@ -10,8 +10,7 @@ app = Flask(__name__)
 @cross_origin()
 def homepage():
 
-    img_PIL = Image.open('secsor.jpg')
-    return render_template('index.html' , img = img_PIL )
+    return render_template('index.html'  )
 
 @app.route('/predict', methods =['POST' , 'GET'])
 @cross_origin()
