@@ -21,12 +21,12 @@
     <div class="form" typeof="table" >
 
         <form action="/predict" method="POST">
-            <input type="number" name="avg_rss12" id="avg_rss12" placeholder="avg_rss12 "  step="any">
-            <input type="number" name="var_rss12" id="var_rss12" placeholder="var_rss12"  step="any">
-            <input type="number" name="avg_rss13" id="avg_rss13" placeholder="avg_rss13"  step="any">
-            <input type="number" name="var_rss13" id="var_rss13" placeholder="var_rss13" step="any">
-            <input type="number" name="avg_rss23" id="avg_rss23" placeholder="avg_rss23"  step="any">
-            <input type="number" name="var_rss23" id="var_rss23" placeholder="var_rss23"  step="any">
+            <input type="number" name="avg_rss12" id="avg_rss12" placeholder="average rss12 "  step="any" required>
+            <input type="number" name="var_rss12" id="var_rss12" placeholder="variance rss12"  step="any" required>
+            <input type="number" name="avg_rss13" id="avg_rss13" placeholder="average rss13"  step="any" required>
+            <input type="number" name="var_rss13" id="var_rss13" placeholder="variance rss13" step="any" required>
+            <input type="number" name="avg_rss23" id="avg_rss23" placeholder="average rss23"  step="any" required>
+            <input type="number" name="var_rss23" id="var_rss23" placeholder="varaince_rss23"  step="any" required>
             <input type="submit" value="Predict">
 
         </form>
